@@ -1,0 +1,69 @@
+<!-- Code for Circular Progress Bar. HTML, CSS and JS taken from below website and then adappted for my ChasingDreams porject -->
+<!-- https://codepen.io/bumuoi/pen/yLvevQz?editors=1111 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Progress? Good question</title>
+</head>
+
+<body>
+    <div class="block">
+        <div class="box">
+            <p class="number">
+                <span class="num">80</span>
+                <span class="sub">%</span>
+            </p>
+            <p class="title">HTML</p>
+        </div>
+        <span class="dots"></span>
+        <svg class="svg">
+            <defs>
+                <linearGradient id="gradientStyle">
+                    <stop offset="0%" stop-color="#565656" />
+                    <stop offset="100%" stop-color="#b7b5b5" />
+                </linearGradient>
+            </defs>
+            <circle class="circle" cx="90" cy="90" r="80" />
+        </svg>
+    </div>
+    <div class="block">
+        <div class="box">
+            <p class="number">
+                <span class="num">100</span>
+                <span class="sub">%</span>
+            </p>
+            <p class="title">CSS</p>
+        </div>
+        <span class="dots"></span>
+        <svg class="svg">
+            <circle class="circle" cx="90" cy="90" r="80" />
+        </svg>
+    </div>
+    <div class="block">
+        <div class="box">
+            <p class="number">
+                <span class="num">35</span>
+                <span class="sub">%</span>
+            </p>
+            <p class="title">JS</p>
+        </div>
+        <span class="dots"></span>
+        <svg class="svg">
+            <circle class="circle" cx="90" cy="90" r="80" />
+        </svg>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
